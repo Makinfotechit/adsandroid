@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/dialog_bg"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            android:text="Exit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_35sdp"></TextView>
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="vertical"
+            android:id="@+id/ll_native_ads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/tv_text"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/white"
+                android:text="Are you sure you want to exit this app?"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+            <RelativeLayout
+                android:layout_margin="@dimen/_5sdp"
+
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/cancle"
+
+                    android:textSize="@dimen/_14sdp"
+
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></TextView>
+            </RelativeLayout>
+            <ImageView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@color/transbg"
+                android:layout_width="1px"
+                android:layout_height="match_parent"></ImageView>
+
+            <RelativeLayout
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+
+                    android:id="@+id/ok"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="Ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></TextView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
