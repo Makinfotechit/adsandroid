@@ -30,6 +30,8 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+import io.jitpack.api.R;
+
 
 public class Splsh {
     public static boolean isOnline(Activity context) {
@@ -126,7 +128,7 @@ public class Splsh {
 
     }
 
-    public static void Update(String apiicon, String vcode, int icon, Activity context, String pkg, String name) {
+    public static void Update(String apiicon, String vcode, int icon, final Activity context, final String pkg, String name) {
         if (isOnline(context)){
             final Dialog dialog = new Dialog(context);
             dialog.setContentView(R.layout.update_dialog);
